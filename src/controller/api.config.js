@@ -1,0 +1,6 @@
+const API_CONFIG = {
+  BASE_URL: 'http://localhost:1433/',
+  API_TOKEN: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXlQc3ciOiI3ODkxMjMiLCJpYXQiOjE3MDI1NTU3NzAsImV4cCI6MTcwMjY0MjE3MH0.QAhiZt2KYSvF2xlsNj7DDfVfL7-ERcMhFULgTNq1cv4'
+}
+
+export default API_CONFIG

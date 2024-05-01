@@ -1,0 +1,91 @@
+
+  .select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  
+  .select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    color: var(--pink);
+    min-width: 80px;
+  }
+  
+  .select-styled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--rusty);
+    opacity: 0.8;
+    padding: 7px 30px 0 0;
+    transition: all 0.2s ease-in;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .select-styled:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-color: var(--pink) transparent transparent transparent;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+  }
+  
+  .select-styled:hover {
+    opacity: 1;
+  }
+  
+  .select-styled:active,
+  .active {
+    background-color: var(--rusty);
+    display: block !important;
+    opacity: 1;
+  }
+  
+  .select-styled:active:after,
+  .active:after {
+    top: 9px;
+    border-color: transparent transparent var(--pink) transparent;
+    display: block !important; 
+
+  }
+  
+  .select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: var(--rusty);
+  }
+  
+  .select-options li {
+    margin: 0;
+    padding: 7px 30px 7px 0;
+    font-size: 1rem;
+    text-indent: 15px;
+    border-top: 1px solid var(--pink);
+    transition: all 0.15s ease-in;
+  }
+  
+  .select-options li:hover,
+  .select-options li.is-selected {
+    color: var(--rusty);
+    background: var(--white);
+  }
+  
+  .select-options li[rel="hide"] {
+    display: none;
+  }
+  

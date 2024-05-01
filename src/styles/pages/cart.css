@@ -1,0 +1,132 @@
+.container-cart-page {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.container-cart-page .button-hover {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container-cart-page {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-pricing {
+        margin-bottom: 0;
+    }
+
+    .container-cart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.cart-empty {
+    background-color: var(--white);
+    border: 1px solid var(--rusty);
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.container-cart {
+    width: 100%;
+    margin: 2rem;
+}
+
+.container-cart .button-hover {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.container-cart h1 {
+    font-size: 5rem;
+    color: var(--rusty);
+}
+
+.btn-empty-cart {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--rusty);
+}
+
+.cart-items {
+    width: 100%;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 160px;
+    color: var(--rusty);
+}
+
+.item-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--rusty);
+    border-radius: 5px;
+    background-color: var(--white);
+}
+
+.item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+}
+
+.item-cart img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 5px solid var(--rusty);
+}
+
+.item-text, .item-interactions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-interaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-price {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.item-price .money {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.container-pricing {
+    display: flex;
+    flex-direction: column;
+    color: var(--rusty);
+    background-color: var(--white);
+    border: 1px solid var(--rusty);
+    align-items: center;
+    border-radius: 5px;
+    height: 100%;
+    width: 450px;
+    padding: 2rem 0;
+    margin-right: 1rem;
+}

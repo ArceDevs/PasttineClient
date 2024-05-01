@@ -1,0 +1,52 @@
+.input-full-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.input-full-box label {
+    font-size: 1.3em;
+    color: var(--rusty);
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 
+        2px 0 var(--pink), 
+        0 0px var(--pink), 
+        2px 0 var(--pink), 
+        0 -1px var(--pink);
+    word-spacing: 4px;
+    letter-spacing: 1.5px;
+}
+
+.input-full-box textarea, .input-full-box input {
+    min-height: 1.8em;
+    border: 2px solid var(--rusty);
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+    padding: 0 5px;
+    color: var(--rusty);
+    font-weight: 600;
+    font-size: 1em;
+    box-shadow: 
+        2px 3px 0 0 var(--rusty),
+        5px 6px 0 0 var(--pink);
+}
+
+.input-full-box textarea {
+    resize: vertical;
+    max-width: 100%; 
+    min-height: 5vh;
+    height: 150px;
+    max-height: 350px;
+    padding: 10px;
+}
+
+
+.input-full-box input::placeholder {
+    color: transparent;
+}
+
+.error-box {
+    display: none;
+}

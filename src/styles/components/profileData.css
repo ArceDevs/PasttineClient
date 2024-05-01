@@ -1,0 +1,16 @@
+.img-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.img-profile svg, .img-profile img{
+    border-radius: 50%;
+    border: 5px solid var(--rusty);
+    margin: 15px 0;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 17px rgba(0,0,0,.6);
+}

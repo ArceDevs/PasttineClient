@@ -1,0 +1,144 @@
+.logo-lg img{
+    border-radius: 50%;
+    border: 1px solid var(--rusty);
+    width: 50%;
+}
+
+.logo-lg{
+    text-align: center;
+}
+
+.logo-widget{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+    padding-top: 10%;
+    background: rgb(123,62,25);
+    background: -moz-linear-gradient(0deg, rgba(123,62,25,1) 0%, rgba(178,139,132,0.7) 82%, transparent 100%);
+    background: -webkit-linear-gradient(0deg, rgba(123,62,25,1) 0%, rgba(178,139,132,0.7) 82%, transparent 100%);
+    background: linear-gradient(0deg, rgba(123,62,25,1) 0%, rgba(178,139,132,0.7) 82%, transparent 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b3e19",endColorstr="#f5e5fc",GradientType=1);
+    position: relative;
+}
+.footer-cta {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1fr 1fr 1fr;
+    justify-content: center;
+    border-bottom: 1px solid var(--rusty);
+}
+
+.single-cta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--pink);
+  font-size: 30px;
+  padding: 20px;
+}
+.single-cta div{
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: var(--pink);
+  font-size: 20px;
+  font-weight: 600;
+}
+.cta-text span {
+  color: var(--pink);
+  font-size: 15px;
+}
+.cta-text a {
+  color: var(--pink);
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.footer-text p {
+  font-size: 14px;
+  color: var(--pink);
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: var(--pink);
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+
+.footer-social-icon a {
+  font-size: 30px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  text-align: center;
+  color: var(--pink);
+}
+
+.footer-widget-heading h3 {
+  color: var(--pink);
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: var(--pink);
+}
+.footer-widget ul li {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget menu ul li a:hover{
+  color: var(--rusty);
+}
+.footer-widget menu ul li a {
+  font-weight: bold;
+  color: var(--pink);
+  text-transform: capitalize;
+}
+
+.copyright-area{
+  background: var(--rusty);
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  color: var(--pink);
+  text-align: center;
+}
+.copyright-text p a{
+  color: var(--pink);
+}

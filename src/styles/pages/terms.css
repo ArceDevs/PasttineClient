@@ -1,0 +1,12 @@
+.terms-services {
+    padding: 2rem 3rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--rusty);
+    text-align: justify;
+    background-color: white;
+    border: 1px solid var(--rusty);
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,30 @@
+.main-slider {
+  margin-bottom: 3rem;
+}
+
+.main-slider a{
+  height: 100%;
+}
+
+.carousel-root, .carousel-root .slider-wrapper, .carousel-root .slider-wrapper img {
+  max-height: 70vh;
+}
+
+@media (min-width: 1200px) {
+  .carousel-root, .carousel-root .slider-wrapper, .carousel-root .slider-wrapper img {
+    max-height: 90vh !important;
+  }
+}
+
+.carousel-root .slider-wrapper img {
+  max-height: 50vh;
+}
+
+.control-arrow {
+  color: var(--pink) !important;
+  background-color: var(--rusty) !important;
+}
+
+.dot {
+  background-color: var(--pink) !important;
+}

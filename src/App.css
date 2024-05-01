@@ -1,0 +1,240 @@
+.main-container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.align-bottom {
+    align-items: baseline;
+}
+
+.rotate-90 {
+    transform: rotate(90deg) !important;
+}
+
+.rotate-180 {
+    transform: rotate(180deg) !important;
+}
+
+.text-rigth {
+    text-align: right !important;
+}
+
+.text-link{
+    color: var(--rusty);
+    text-decoration: none;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+    color: var(--rusty);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.top-arrow{
+    z-index: 900;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--rusty);
+    border-radius: 50%;
+    border: 2px solid var(--pink);
+}
+
+.top-arrow::after {
+    content: '►';
+    display: grid;
+    place-content: center;
+    width: 50px;
+    height: 50px;
+    color: var(--pink);
+    transform: rotate(270deg) translate(3px, -2px);
+    font-size: 25px;
+}
+
+input[type='text'].numeric {
+    /* width: 100%; */
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--brown);
+    border: none;
+    border-bottom: 1px solid var(--brown);
+    outline: none;
+    background: transparent;
+}
+
+input[type='text'].numeric::placeholder {
+    text-align: center;
+    color: var(--brown);
+}
+
+
+input[type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Hide the browser's default checkbox */
+.check-box-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--brown);
+    border-radius: 5px;
+    margin: 3px;
+}
+
+
+.check-box-container:hover input ~ .checkmark {
+    background-color: var(--rusty);
+}
+
+
+.check-box-container input:checked ~ .checkmark {
+    background-color: var(--rusty);
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.check-box-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.check-box-container .checkmark:after {
+    left: 10px;
+    top: 7px;
+    width: 6px;
+    height: 10px;
+    border: solid var(--pink);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* FORMULARIO */
+
+.form-page {
+    max-width: 50vw;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .form-page {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+.form-page .double-input {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 40px;
+}
+
+.form-page .check-box-container {
+    font-size: 1rem;
+}
+
+.form-page .checkmark {
+    height: 20px;
+    width: 20px;
+}
+
+.form-page .checkmark:after {
+    left: 7px;
+    top: 5px;
+}
+
+/* ERROR MESSAGE*/
+.error-cards{
+    text-align: left;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: var(--rusty);
+    font-size: 1.5rem;
+    padding: 1em 4em;
+}
+
+/* LOADER*/
+
+.loader{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin: 50px 0;
+}
+
+.loader::after {
+    position: absolute;
+    content: '';
+    left: 46%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 6px solid var(--rusty);
+    border-color: var(--rusty) transparent var(--rusty) transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+.reverse.loader::after {
+    border: 6px solid var(--pink);
+    border-color: var(--pink) transparent var(--pink) transparent;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

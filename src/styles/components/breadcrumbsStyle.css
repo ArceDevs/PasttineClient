@@ -1,0 +1,27 @@
+/* Breadcrumbs */
+
+.breadcrumbs{
+    max-width: 100vw;
+    max-width: 100svw;
+    margin: 20px 10px;
+}
+
+.breadcrumbs > .crumb a{
+    color: var(--brown);
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.breadcrumbs > *{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.breadcrumbs > .crumb:after{
+    content: '>';
+    margin-left: 10px;
+}
+
+.breadcrumbs > .crumb:last-child::after{
+    display: none;
+}

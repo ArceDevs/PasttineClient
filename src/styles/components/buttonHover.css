@@ -1,0 +1,31 @@
+.button-hover {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--rusty);
+    text-shadow: 
+        2px 0 var(--pink), 
+        0 0px var(--pink), 
+        2px 0 var(--pink), 
+        0 -1px var(--pink);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    width: fit-content;
+}
+  
+.button-hover:hover {
+    background: var(--brown);
+    color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--brown),
+                0 0 25px var(--brown),
+                0 0 50px var(--brown),
+                0 0 100px var(--brown);
+    text-shadow: none;
+}

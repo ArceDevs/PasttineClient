@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+}
+
+html, body, main {
+    /* width: 100svw; */
+    width: 100%;
+}
+
+/* body {
+    background-color: var(--pink);
+    overflow: overlay;
+} */
+
+body {
+    background-image: url(./assets/bg_1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: overlay;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button{
+    all: unset;
+}
+
+
+
+img{
+    max-width: 100%;
+}
+
+h1{ font-size: 4rem; }
+h2{ font-size: clamp(2rem, 3.5rem, 4rem); }
+h3{ font-size: clamp(1rem, 2.5rem, 3rem); }
+h4{ font-size: clamp(.5rem, 1.5rem, 2rem); }
+
+
+
+/* Quitar sombreado azull input */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+textarea:focus-visible, input:focus-visible {
+    outline: 0;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+    border-radius: 5px;
+}
+
+:root{
+    --rusty: #7b3e19; 
+    --brown: #B28B84; 
+    --pink: #F5E5FC; 
+    --blue: #8AE1FC;
+    --white: #fff; 
+    --error: #D52941;
+    --clear-error: #f7a0b2;
+    --valid: #5BD776;
+    --clear-valid: #a0f2b2;
+    --black: #272727;
+}
+
+
+
+
+/* General classes */
+
+.d-none{
+    display: none;
+}
+
+.h3-style {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: bold;
+	font-style: italic;
+	color: var(--rusty);
+    width: clamp(8em, 10em, 100%);
+	margin: 0 auto;
+    position: relative;
+}
+
+.h3-style::after {
+    position: absolute;
+    content: '';
+    width: clamp(8em, 20em, 100%);
+    height: 2px;
+    background-color: var(--rusty);
+    bottom: 0;
+    left: 0;
+}
+
+
+/* ANIMATIONS */
+
+
+.typing-animation{
+    width: fit-content;
+    overflow: hidden;
+    border-right: .15em solid var(--pink); 
+    white-space: nowrap;
+    animation: 
+    typing 2s steps(30, end),
+    blink-caret .5s step-end forwards;
+}
+
+/* Window */
+.window-opened {
+    animation: windowOpen 1s ease-in-out forwards;
+}
+
+.window-closed {
+    animation: windowClose 1s ease-in-out forwards;
+}
+
+/* The window effect */
+@keyframes windowOpen {
+    from { height: 0 }
+    to { height: auto }
+}
+
+/* The window effect */
+@keyframes windowClose {
+    from { height: auto }
+    to { height: 0 }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--pink) }
+}
+
+/* Pulsing effect / Rotated */
+@keyframes pulseRotate {
+    0% {
+      transform: rotate(30deg) scale(1);
+    }
+    50% {
+      transform: rotate(30deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(30deg) scale(1);
+    }
+}
+
+/* Rotation effect */
+@keyframes rotate {
+    0% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(30deg);
+    }
+}
+  
+  /* Pulsing effect */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
